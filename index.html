@@ -7,11 +7,13 @@
     <title>First React app</title>
 </head>
 <body>
-    <div class="root"></div>
+    <div id="root"></div>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script>
-        
+        const helloWorld = React.createElement('h1', null, 'Hello World!');
+        const root = document.getElementById('root');
+        ReactDOM.render(helloWorld, root);
     </script>
 </body>
 </html>
